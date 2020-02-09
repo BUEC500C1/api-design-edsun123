@@ -151,5 +151,5 @@ def print_colors():
 
 #where you runthe program
 while(True):
-    print_objects()
+    reply_to_tweets();
     time.sleep(5)
