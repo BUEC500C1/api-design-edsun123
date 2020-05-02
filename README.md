@@ -2,14 +2,29 @@
 api-design-edsun123 created by GitHub Classroom
 
 
-For this api, I've created three functions: reply_to_tweet, print_colors, and print_objects
+## Description
+This api will print out the image description of a image file as input as argument and tweet it given the appropriate keys
 
-reply_to_tweet prints the label desriptions and tweets out the results
-print_colors provides analytics on color composition in the terminal
-print_colors detects all objects and gives probability of object detection on the terminal
+## File Organization
 
-To use the functions, I have a while loop that remains true but sleeps every 5 seconds for every tweet sent out. 
-Change the function inside the while loop between reply_to_tweets, print colors, or print_objects
-To send picture to the program, tweet to @Edwin86888730 with an image attached
+* Car.jpg and img.jpg are example images used for the example program
 
-email me at edsun@Bu.edu if errors occur
+* twittervision-eb2dfdbe7250.json is used for setting the crednetials
+
+* misc contains all miscellaneous files not needed for operation
+
+* requirements.txt contains the packages needed to install
+
+* test_twitter_vision.py tests the functions for github actions
+
+* twitter_vision.py  contains the main functions you want to run
+
+## Usage / how to use the functions
+I've created three functions inside : set_credentials(), tweet_image_desc(), example_test()
+
+You must set credentials in order to use the twitter and google vision api. This needs your consumer key, consumer_secret, access keys and access_secret as inputs. 
+
+To get the text description of the images, put the image jpg name inside the current directory as the main file twitter_vision.py. This is will grab the image and pass it into the google vision api. Given the credentials of the twitter handle you want to use, it will post the tweet of image description. It will run into an error if you try to tweet the same image description. This is twitter api's way of preventing spamming. Moreoever, it will print out the string of the imae desciption.
+
+For testing purposes, you can  run example_test() that will pass in the credentials for my tweet handle and pass car.jpg that I have already saved in the current directory. 
+
