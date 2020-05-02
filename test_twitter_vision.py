@@ -13,4 +13,4 @@ def test_does_file_exist():
     assert Path('twittervision-eb2dfdbe7250.json').is_file()
     
 def test_does_program_exist():
-    assert Path('twitter_vission.py').is_file()
+    assert Path('twitter_vision.py').is_file()
