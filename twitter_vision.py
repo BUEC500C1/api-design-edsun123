@@ -56,5 +56,5 @@ def tweet_image_desc(image_name):
     return str
     
 def example_test():
-    set_credentials('OWAfdRNKgpKB1ELKW8M43PAss', '9aClvN6lGZ2oLbqj17gDi9a79MGE1wZ2oPtBxgxqRqwoHsbaFu', '1222946005336936449-8QGSmsVpVHXTf3YSjz0vdlAZbIxpjG', 'nFIaObT4KyUCxh2I3YyYVtefhTKSIug8zn1eWvRWAOLgK')
+    set_credentials() #removed inputs
     tweet_image_desc('car.jpg')
